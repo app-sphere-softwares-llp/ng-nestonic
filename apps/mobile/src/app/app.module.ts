@@ -2,11 +2,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { RouterModule } from '@angular/router';
+import { IonicModule } from '@ionic/angular';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, NgbModule],
+  imports: [
+    BrowserModule,
+    RouterModule.forRoot([], { initialNavigation: 'enabled' }),
+    IonicModule.forRoot(),
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -28,6 +28,19 @@
     "website-e2e": {
       "tags": [],
       "implicitDependencies": ["website"]
+    },
+    "mobile": {
+      "tags": []
+    },
+    "mobile-e2e": {
+      "tags": [],
+      "implicitDependencies": ["mobile"]
+    },
+    "api": {
+      "tags": []
+    },
+    "common": {
+      "tags": []
     }
   }
 }
